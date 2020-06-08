@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  height: 100vh;
+}
+
+header {
+  margin: 0 auto;
+  padding: 1.2rem 3rem 3rem 3rem;
+  width: 100%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .logo {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo .logoSlash, header .logo .logoText1, header .logo .logoText2 {
+  padding: 0 0 0 .5rem;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .logo .logoText1, header .logo .logoText2 {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+header .logo .logoName {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: rgba(140, 44, 218, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .logo .logoSlash {
+  color: rgba(140, 44, 218, 0.5);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+
+header nav div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+}
+
+header nav div ::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(140, 44, 218, 0.5);
+  -webkit-transform: scaleX(0.3);
+          transform: scaleX(0.3);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+header nav div :hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+header nav div a {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+header nav div a:hover {
+  color: rgba(140, 44, 218, 0.7);
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+section .btn {
+  margin: 1rem;
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: #8c2cda;
+  z-index: 99;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  position: relative;
+}
+
+section .btn:hover {
+  color: whitesmoke;
+  z-index: 1;
+}
+
+section .btn::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(140, 44, 218, 0.65);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  z-index: -1;
+}
+
+section .btn:hover::after {
+  position: absolute;
+  -webkit-transform: scaleY(60);
+          transform: scaleY(60);
+}
+/*# sourceMappingURL=styles.css.map */
